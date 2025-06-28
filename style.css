@@ -1,0 +1,71 @@
+/* Page layout and background */
+body, html, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url('assets/images/default.jpeg'); /* ✅ Default background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Input and buttons */
+input {
+  padding: 10px;
+  width: 60%;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border: none;
+  background-color: #5c9ded;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.or {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Weather result box */
+#weatherBox {
+  display: none;
+  margin-top: 20px;
+}
+
+#icon {
+  width: 80px;
+  height: 80px;
+}
